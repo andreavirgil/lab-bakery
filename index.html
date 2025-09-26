@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
   <head>
-    <meta charset="UTF-8" data-theme="cupcake" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAB Bakery</title>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
@@ -14,20 +15,19 @@
       rel="stylesheet"
       type="text/css"
     />
-    <title>LAB Bakery</title>
   </head>
-  <body>
+  <body class="font-sans">
+    <!-- Navbar -->
     <header>
-      <!--Navbar-->
-      <div class="navbar bg-peach-100 shadow-sm px-4">
+      <div class="navbar bg-pink-50 shadow px-6">
         <!-- Logo -->
         <div class="navbar-start">
-          <img src="asset/logo.png" alt="logo" class="h-15 w-auto rounded" />
+          <img src="asset/logo.png" alt="logo" class="h-14 w-auto rounded" />
         </div>
 
-        <!-- Menu (center, hanya tampil di layar besar) -->
+        <!-- Menu -->
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-2 gap-4">
+          <ul class="menu menu-horizontal px-2 gap-4 text-lg font-medium">
             <li><a href="#">About</a></li>
             <li><a href="#">Menu</a></li>
             <li><a href="#">Contact</a></li>
@@ -37,62 +37,74 @@
 
         <!-- Button -->
         <div class="navbar-end">
-          <a href="#" class="btn bg-pink-100">Order Now!</a>
+          <a href="#" class="btn btn-primary">Order Now!</a>
         </div>
       </div>
     </header>
-    <main class="bg-emerald-100">
-      <!--Hero-->
-      <div>
-        <img src="" alt="" />
-        <h1>LAB Bakery</h1>
-        <img src="error.png" alt="hero" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio
-          rem deserunt omnis quo magnam aut quisquam culpa accusamus. Iure
-          adipisci dolorum enim accusamus modi magnam qui expedita hic ut,
-          tempora et veniam ab repellat tempore delectus, saepe laudantium
-          fugiat, repellendus ipsum ratione? Eveniet nobis praesentium
-          laudantium sit nisi sapiente.
-        </p>
-        <button><a href="#"></a>Order Now</button>
-      </div>
 
-      <!--History-->
-      <div>
-        <h1>Our History</h1>
-        <p>
+    <main>
+      <!-- Hero -->
+      <section class="hero min-h-screen bg-emerald-100">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img
+            src="asset/hero.png"
+            alt="hero"
+            class="max-w-sm rounded-lg shadow-2xl"
+          />
+          <div>
+            <h1 class="text-5xl font-bold">LAB Bakery</h1>
+            <p class="py-6 max-w-xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              odio rem deserunt omnis quo magnam aut quisquam culpa accusamus.
+            </p>
+            <a href="#menu" class="btn btn-secondary">Order Now</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- History -->
+      <section class="px-8 py-16 text-center bg-base-200">
+        <h2 class="text-3xl font-bold mb-4">Our History</h2>
+        <p class="max-w-3xl mx-auto text-lg leading-relaxed">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
           voluptatibus! Officia placeat debitis deserunt! Ea, nisi! Illo
           voluptatum nihil officia corrupti iste dolores error aliquam eligendi,
-          odio asperiores, numquam non rem sequi cumque provident, aspernatur
-          expedita necessitatibus voluptas deleniti! Quae at eum excepturi quasi
-          veritatis perspiciatis necessitatibus rerum molestias odio.
+          odio asperiores.
         </p>
-      </div>
+      </section>
 
-      <!--Menu-->
-      <div>
-        <h1>Our Menu</h1>
-        <img src="asset/bolu.png" alt="bolu" />
-        <img src="asset/carrotcake.png" alt="carrotcake" />
-        <img src="asset/cookies.png" alt="cookies" />
-        <img src="asset/donat.png" alt="donat" />
-        <img src="asset/minicake.png" alt="minicake" />
-        <img src="asset/mooncake.png" alt="mooncake" />
-        <img src="asset/muffin.png" alt="muffin" />
-        <img src="asset/pie.png" alt="pie" />
-        <img src="asset/redvelvet.png" alt="redvelvet" />
-        <img src="asset/strawberrycake.png" alt="strawberrycake" />
-      </div>
+      <!-- Menu -->
+      <section id="menu" class="px-8 py-16 bg-base-100">
+        <h2 class="text-3xl font-bold text-center mb-10">Our Menu</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          <img src="asset/bolu.png" alt="Bolu" class="rounded shadow" />
+          <img src="asset/carrotcake.png" alt="Carrot Cake" class="rounded shadow" />
+          <img src="asset/cookies.png" alt="Cookies" class="rounded shadow" />
+          <img src="asset/donat.png" alt="Donat" class="rounded shadow" />
+          <img src="asset/minicake.png" alt="Mini Cake" class="rounded shadow" />
+          <img src="asset/mooncake.png" alt="Mooncake" class="rounded shadow" />
+          <img src="asset/muffin.png" alt="Muffin" class="rounded shadow" />
+          <img src="asset/pie.png" alt="Pie" class="rounded shadow" />
+          <img src="asset/redvelvet.png" alt="Red Velvet" class="rounded shadow" />
+          <img src="asset/strawberrycake.png" alt="Strawberry Cake" class="rounded shadow" />
+        </div>
+      </section>
     </main>
-    <footer>
-      <h1>LAB Bakery</h1>
-      <p>Copyright 2025 LAB</p>
-      <p>Telp.</p>
-      <p>Instagram</p>
-      <p>Facebook</p>
-      <p>Email</p>
+
+    <!-- Footer -->
+    <footer class="footer footer-center p-10 bg-pink-50 text-base-content">
+      <aside>
+        <h1 class="text-2xl font-bold">LAB Bakery</h1>
+        <p>Copyright © 2025 LAB. All rights reserved.</p>
+      </aside>
+      <nav>
+        <div class="grid grid-flow-col gap-6">
+          <a href="#">Telp.</a>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Email</a>
+        </div>
+      </nav>
     </footer>
   </body>
 </html>

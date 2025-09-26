@@ -38,32 +38,41 @@
 
     <main>
       <!-- Hero -->
-      <section class="hero min-h-screen bg-pink-100">
-        <div class="hero-content flex-col lg:flex-row-reverse">
-          <img
-            src="asset/hero.jpeg"
-            alt="hero"
-            class="max-w-sm rounded-lg shadow-2xl"
-          />
-          <div>
-            <h1 class="text-5xl font-bold text-pink-700">LAB Bakery</h1>
-            <p class="py-6 max-w-xl text-pink-600">
-              Freshly baked with love. Discover our sweet creations made every
-              day just for you.
-            </p>
-            <a href="#menu" class="btn bg-pink-500 text-white hover:bg-pink-600">Order Now</a>
-          </div>
+      <section class="relative">
+        <img
+          src="asset/hero.jpeg"
+          alt="hero"
+          class="w-full h-[80vh] object-cover"
+        />
+        <div class="absolute inset-0 bg-pink-900 bg-opacity-40 flex flex-col justify-center items-center text-center px-6">
+          <h1 class="text-5xl md:text-6xl font-bold text-white">LAB Bakery</h1>
+          <p class="mt-4 max-w-2xl text-lg md:text-xl text-pink-100">
+            Freshly baked with love. Discover our sweet creations made every day just for you.
+          </p>
+          <a
+            href="#menu"
+            class="mt-6 btn bg-pink-500 text-white hover:bg-pink-600"
+            >Order Now</a
+          >
         </div>
       </section>
 
       <!-- History -->
-      <section class="px-8 py-16 text-center bg-pink-50">
-        <h2 class="text-3xl font-bold text-pink-700 mb-4">Our History</h2>
-        <p class="max-w-3xl mx-auto text-lg text-pink-600 leading-relaxed">
-          Since 2010, LAB Bakery has been serving delightful pastries, cakes, and
-          cookies. We combine tradition and creativity to bring joy in every
-          bite.
-        </p>
+      <section class="px-8 py-16 bg-pink-50">
+        <h2 class="text-3xl font-bold text-pink-700 text-center mb-10">Our History</h2>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <img
+            src="asset/history.jpeg"
+            alt="History"
+            class="w-full h-80 object-cover rounded-lg shadow"
+          />
+          <p class="text-lg text-pink-600 leading-relaxed text-justify">
+            Since 2010, LAB Bakery has been serving delightful pastries, cakes, and cookies. 
+            We combine tradition and creativity to bring joy in every bite. From classic recipes 
+            passed down through generations to innovative flavors loved by our customers, 
+            every product is crafted with care and passion. 
+          </p>
+        </div>
       </section>
 
       <!-- Menu -->

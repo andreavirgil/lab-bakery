@@ -16,35 +16,30 @@
       type="text/css"
     />
   </head>
-  <body class="font-sans">
+  <body class="font-sans bg-pink-50">
     <!-- Navbar -->
     <header>
-      <div class="navbar bg-pink-50 shadow px-6">
-        <!-- Logo -->
+      <div class="navbar bg-pink-100 shadow px-6">
         <div class="navbar-start">
           <img src="asset/logo.png" alt="logo" class="h-14 w-auto rounded" />
         </div>
-
-        <!-- Menu -->
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-2 gap-4 text-lg font-medium">
+          <ul class="menu menu-horizontal px-2 gap-4 text-lg font-medium text-pink-700">
             <li><a href="#">About</a></li>
-            <li><a href="#">Menu</a></li>
+            <li><a href="#menu">Menu</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Dark Mode</a></li>
           </ul>
         </div>
-
-        <!-- Button -->
         <div class="navbar-end">
-          <a href="#" class="btn btn-primary">Order Now!</a>
+          <a href="#menu" class="btn bg-pink-500 text-white hover:bg-pink-600">Order Now!</a>
         </div>
       </div>
     </header>
 
     <main>
       <!-- Hero -->
-      <section class="hero min-h-screen bg-emerald-100">
+      <section class="hero min-h-screen bg-pink-100">
         <div class="hero-content flex-col lg:flex-row-reverse">
           <img
             src="asset/hero.png"
@@ -52,59 +47,83 @@
             class="max-w-sm rounded-lg shadow-2xl"
           />
           <div>
-            <h1 class="text-5xl font-bold">LAB Bakery</h1>
-            <p class="py-6 max-w-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-              odio rem deserunt omnis quo magnam aut quisquam culpa accusamus.
+            <h1 class="text-5xl font-bold text-pink-700">LAB Bakery</h1>
+            <p class="py-6 max-w-xl text-pink-600">
+              Freshly baked with love. Discover our sweet creations made every
+              day just for you.
             </p>
-            <a href="#menu" class="btn btn-secondary">Order Now</a>
+            <a href="#menu" class="btn bg-pink-500 text-white hover:bg-pink-600">Order Now</a>
           </div>
         </div>
       </section>
 
       <!-- History -->
-      <section class="px-8 py-16 text-center bg-base-200">
-        <h2 class="text-3xl font-bold mb-4">Our History</h2>
-        <p class="max-w-3xl mx-auto text-lg leading-relaxed">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
-          voluptatibus! Officia placeat debitis deserunt! Ea, nisi! Illo
-          voluptatum nihil officia corrupti iste dolores error aliquam eligendi,
-          odio asperiores.
+      <section class="px-8 py-16 text-center bg-pink-50">
+        <h2 class="text-3xl font-bold text-pink-700 mb-4">Our History</h2>
+        <p class="max-w-3xl mx-auto text-lg text-pink-600 leading-relaxed">
+          Since 2010, LAB Bakery has been serving delightful pastries, cakes, and
+          cookies. We combine tradition and creativity to bring joy in every
+          bite.
         </p>
       </section>
 
       <!-- Menu -->
-      <section id="menu" class="px-8 py-16 bg-base-100">
-        <h2 class="text-3xl font-bold text-center mb-10">Our Menu</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-          <img src="asset/bolu.png" alt="Bolu" class="rounded shadow" />
-          <img src="asset/carrotcake.png" alt="Carrot Cake" class="rounded shadow" />
-          <img src="asset/cookies.png" alt="Cookies" class="rounded shadow" />
-          <img src="asset/donat.png" alt="Donat" class="rounded shadow" />
-          <img src="asset/minicake.png" alt="Mini Cake" class="rounded shadow" />
-          <img src="asset/mooncake.png" alt="Mooncake" class="rounded shadow" />
-          <img src="asset/muffin.png" alt="Muffin" class="rounded shadow" />
-          <img src="asset/pie.png" alt="Pie" class="rounded shadow" />
-          <img src="asset/redvelvet.png" alt="Red Velvet" class="rounded shadow" />
-          <img src="asset/strawberrycake.png" alt="Strawberry Cake" class="rounded shadow" />
+      <section id="menu" class="px-8 py-16 bg-pink-100">
+        <h2 class="text-3xl font-bold text-center text-pink-700 mb-10">
+          Our Menu
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="flex flex-col items-center">
+            <img src="asset/bolu.png" alt="Bolu" class="w-40 h-40 object-cover rounded-full shadow" />
+            <p class="mt-3 font-medium text-pink-700">Bolu</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="asset/carrotcake.png" alt="Carrot Cake" class="w-40 h-40 object-cover rounded-full shadow" />
+            <p class="mt-3 font-medium text-pink-700">Carrot Cake</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="asset/cookies.png" alt="Cookies" class="w-40 h-40 object-cover rounded-full shadow" />
+            <p class="mt-3 font-medium text-pink-700">Cookies</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="asset/donat.png" alt="Donat" class="w-40 h-40 object-cover rounded-full shadow" />
+            <p class="mt-3 font-medium text-pink-700">Donat</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="asset/minicake.png" alt="Mini Cake" class="w-40 h-40 object-cover rounded-full shadow" />
+            <p class="mt-3 font-medium text-pink-700">Mini Cake</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="asset/mooncake.png" alt="Mooncake" class="w-40 h-40 object-cover rounded-full shadow" />
+            <p class="mt-3 font-medium text-pink-700">Mooncake</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="asset/muffin.png" alt="Muffin" class="w-40 h-40 object-cover rounded-full shadow" />
+            <p class="mt-3 font-medium text-pink-700">Muffin</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="asset/pie.png" alt="Pie" class="w-40 h-40 object-cover rounded-full shadow" />
+            <p class="mt-3 font-medium text-pink-700">Pie</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="asset/redvelvet.png" alt="Red Velvet" class="w-40 h-40 object-cover rounded-full shadow" />
+            <p class="mt-3 font-medium text-pink-700">Red Velvet</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="asset/strawberrycake.png" alt="Strawberry Cake" class="w-40 h-40 object-cover rounded-full shadow" />
+            <p class="mt-3 font-medium text-pink-700">Strawberry Cake</p>
+          </div>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer footer-center p-10 bg-pink-50 text-base-content">
-      <aside>
+    <footer class="footer footer-center p-10 bg-pink-200 text-pink-800">
+      <div>
         <h1 class="text-2xl font-bold">LAB Bakery</h1>
         <p>Copyright © 2025 LAB. All rights reserved.</p>
-      </aside>
-      <nav>
-        <div class="grid grid-flow-col gap-6">
-          <a href="#">Telp.</a>
-          <a href="#">Instagram</a>
-          <a href="#">Facebook</a>
-          <a href="#">Email</a>
-        </div>
-      </nav>
+        <p>Telp. | Instagram | Facebook | Email</p>
+      </div>
     </footer>
   </body>
 </html>

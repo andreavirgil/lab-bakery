@@ -72,6 +72,23 @@
         transform: scale(1.1);
         box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
       }
+
+      /* Contact Section */
+      #contact {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #fdffd0;
+      border-radius: 10px;
+      box-shadow: -5px 5px 0px rgb(255, 228, 230);
+      }
+
+      #contact h2 {
+      text-align: center;
+      color: #CC0E36;
+      margin-bottom: 20px;
+      font-size: 28px;
+      }
     </style>
   </head>
   <body class="bg-rose-50 text-neutral-800">
@@ -237,6 +254,23 @@
         </div>
       </section>
     </main>
+
+    <!-- Contact Us Section -->
+    <section id="contact" style="padding: 45px; background:#FFE4E6;">
+      <h2>Contact Us</h2>
+      <form>
+          <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+
+        <label for="name">Subject:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="message">Feedback:</label><br>
+        <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea><br><br>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
 
     <!-- Footer -->
     <footer
